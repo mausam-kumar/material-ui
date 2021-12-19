@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import GridCollection from './components/grid/GridCollection.jsx'
+import Form from './components/grid/Form.jsx'
+import ModalComp from './components/grid/ModalComp.jsx'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div className="App">
+	  <GridCollection />
+    <Form />
+    <ModalComp />
+  </div>;
 }
 
 export default App;
